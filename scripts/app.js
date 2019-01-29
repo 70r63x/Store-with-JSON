@@ -1,6 +1,6 @@
 angular.module("Store", ["ui.router"])
 	.constant("api", {
-		url: "data.json"
+		url: "json/data.json"
 	})
 	.config(function config($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/');
