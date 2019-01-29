@@ -118,6 +118,7 @@ PRODUCTS LIST
 	position: relative;
 	overflow: hidden;
 	width: 90%;
+	border-radius: 70px;
 	margin: 0 auto;
 	border: 1px solid #eee;
 	box-shadow: 0 0 12px rgba(221, 221, 221, .6);
