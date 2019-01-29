@@ -58,10 +58,10 @@ angular.module("Store")
 			// If the product is not in the cart, add it
 			if( !isInCart(product) ) {
 				productsInCart.push(product);
-				toast.show("Product added to cart");
+				toast.show("Producto agregado al carrito");
 				return;
 			}
-			dialog.show("This product is already in the cart");
+			dialog.show("Este producto ya esta en el carrito");
 		};
 
 		// Delete a single product to the cart array
