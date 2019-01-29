@@ -1,0 +1,21 @@
+<section class="container">
+	<div class="row top-separator">
+		<!-- Products list -->
+		<ul class="list-unstyled products-list">
+			<li class="col-sm-6 col-md-3 product" ng-repeat="product in cartProducts">
+				<article>
+					<img image-loaded="{{ product.img }}" src="images/placeholder.png" class="img-responsive" alt="Product image">
+					<div class="short-product-detail text-center">
+						<p class="name">{{ product.name }}</p>
+						<span class="price">{{ product.price | currency }}</span>
+					</div>
+					<a href="javascript:void(0);" ng-click="deleteFromCart($index)" class="delete-from-cart text-center">delete</a>
+				</article>
+			</li>
+		</ul> <!-- END .products-list -->
+		<div class="no-results" ng-if="!cartProducts.length">
+			No items in the cart!
+			<a ui-sref="products">go shopping!</a>
+		</div>
+	</div> <!-- END .row -->
+</section> <!-- body -->
