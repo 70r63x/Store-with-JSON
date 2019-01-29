@@ -29,14 +29,14 @@
 						class="add-to-cart"
 						ng-click="addToCart(product)"
 						ng-if="product.available">
-						add to cart
+						Agregar al carrito
 					</a>
 					<span ng-if="!product.available" class="not-available">No disponible</span>
 				</div>
 			</div> <!-- END .row -->
 			<div class="row">
 				<div class="col-md-12">
-					<p class="description">{{ product.description }}</p>
+					<p><strong>Descripcion: </strong></p><p class="description">{{ product.description }}</p>
 				</div>
 			</div> <!-- END .row -->
 		</div>
