@@ -9,13 +9,13 @@
 						<p class="name">{{ product.name }}</p>
 						<span class="price">{{ product.price | currency }}</span>
 					</div>
-					<a href="javascript:void(0);" ng-click="deleteFromCart($index)" class="delete-from-cart text-center">delete</a>
+					<a href="javascript:void(0);" ng-click="deleteFromCart($index)" class="delete-from-cart text-center">Eliminar</a>
 				</article>
 			</li>
 		</ul> <!-- END .products-list -->
 		<div class="no-results" ng-if="!cartProducts.length">
-			No items in the cart!
-			<a ui-sref="products">go shopping!</a>
+			No se han agregado productos al carrito
+			<a ui-sref="products">Seguir comprando!</a>
 		</div>
 	</div> <!-- END .row -->
 </section> <!-- body -->
